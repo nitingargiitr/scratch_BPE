@@ -1,7 +1,3 @@
-import re
-from collections import defaultdict , Counter
-import string
-
 class BPE:
     def __init__(self):
         # mapping token id to token string 
