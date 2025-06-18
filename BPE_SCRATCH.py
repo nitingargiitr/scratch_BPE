@@ -102,13 +102,13 @@ class BPE:
             self.vocab[merge_id] = merged_token
             self.inverse_vocab[merged_token] = merge_id
 
-
+    # printing the updated vocab
     def print_vocab(self):
         print("Vocabulary:")
         for token_id in sorted(self.vocab):
             print(f"{token_id}: {self.vocab[token_id]}")
 
-
+    # to check what merges have been done
     def print_merges(self):
         print("BPE merges:")
         for pair, new_id in self.bpe_merges.items():
